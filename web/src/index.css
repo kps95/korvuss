@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #8a111a;
+  --secondary: #0c0f17;
+  --accent: #c0a36e;
+  --text: #f2f3f7;
+  --muted: #9aa1b5;
+  --card: rgba(16, 17, 26, 0.9);
+  --panel: rgba(18, 20, 28, 0.8);
+  --stroke: rgba(255, 255, 255, 0.08);
+  --bg-gradient: linear-gradient(135deg, #0b0d13 0%, #111423 50%, #181321 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.app {
+  background: var(--bg-gradient);
+}
