@@ -22,6 +22,7 @@ const siteConfig = {
     { to: "/studs", label: "Studs" },
     { to: "/puppies", label: "Puppies" },
     { to: "/merch", label: "Merch" },
+    { to: "/genetics", label: "Genetics" },
     { to: "/gallery", label: "Gallery" },
     { to: "/faq", label: "FAQ" },
     { to: "/contact", label: "Contact" },

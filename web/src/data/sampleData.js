@@ -4,11 +4,11 @@ export const studs = [
     name: "Stitch",
     image:
       "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80",
-    color: "Merle",
-    dna: "EmEm kyky awaw DD Bb",
+    color: "Blue Tan Merle",
+    dna: "Blue Tan Merle (ay/ay d/d B/B M/m L/l Coco)",
     fee: 800,
     description:
-      "...",
+      "Sire: Ben Franklin ...",
   },
   {
     id: "midnight-rune",
@@ -36,60 +36,60 @@ export const studs = [
 
 export const puppies = [
   {
-    id: "storm",
-    name: "Storm",
+    id: "tbd",
+    name: "tbd",
     sex: "Female",
-    dob: "2024-11-02",
-    color: "Charcoal",
-    dna: "EmE kyky awaw DD Bb",
-    price: 3200,
-    status: "available",
+    dob: "2026",
+    color: "????",
+    dna: "????",
+    price: 9999,
+    status: "tbd",
     image:
       "https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=900&q=80",
     description:
-      "Observant, people-focused, and already showing confident leash engagement.",
+      "????",
   },
   {
-    id: "onyx",
-    name: "Onyx",
+    id: "tbd",
+    name: "tbd",
     sex: "Male",
-    dob: "2024-10-20",
-    color: "Black",
-    dna: "EmEm kyky atat DD bb",
-    price: 2900,
-    status: "reserved",
+    dob: "2026",
+    color: "????",
+    dna: "????",
+    price: 9999,
+    status: "tbd",
     image:
       "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=900&q=80",
     description:
-      "Powerful head, bold footing, and food drive that makes training fun.",
+      "????",
   },
   {
-    id: "ember",
-    name: "Ember",
+    id: "tbd",
+    name: "tbd",
     sex: "Female",
-    dob: "2024-09-12",
-    color: "Red Sable",
-    dna: "EmE kyky ayay Dd bb",
-    price: 3500,
-    status: "available",
+    dob: "2026",
+    color: "????",
+    dna:"????",
+    price: 9999,
+    status: "tbd",
     image:
       "https://images.unsplash.com/photo-1548247416-ec66f4900b2c?auto=format&fit=crop&w=900&q=80",
     description:
-      "Soft expression, sweet with kids, and already crate trained overnight.",
+      "????",
   },
   {
-    id: "kade",
-    name: "Kade",
+    id: "????",
+    name: "????",
     sex: "Male",
-    dob: "2024-08-30",
-    color: "Blue Smoke",
-    dna: "EmEm kyky awaw dD BB",
-    price: 3100,
-    status: "sold",
+    dob: "2026",
+    color:"????",
+    dna:"????",
+    price: 9999,
+    status: "????",
     image:
       "https://images.unsplash.com/photo-1505628346881-b72b27e84530?auto=format&fit=crop&w=900&q=80",
     description:
-      "Adventure buddy with clean rear angulation and effortless trot.",
+      "????",
   },
 ];
 

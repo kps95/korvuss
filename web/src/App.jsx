@@ -16,6 +16,7 @@ import PuppiesPage from "./pages/PuppiesPage";
 import PuppyDetailPage from "./pages/PuppyDetailPage";
 import StudDetailPage from "./pages/StudDetailPage";
 import StudsPage from "./pages/StudsPage";
+import GeneticsPage from "./pages/GeneticsPage";
 import { useEffect } from "react";
 import "./App.css";
 
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/studs/:id" element={<StudDetailPage />} />
           <Route path="/puppies" element={<PuppiesPage />} />
           <Route path="/puppies/:id" element={<PuppyDetailPage />} />
+          <Route path="/genetics" element={<GeneticsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/apply" element={<ApplicationPage />} />
           <Route path="/faq" element={<FaqPage />} />

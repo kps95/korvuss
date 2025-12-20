@@ -191,6 +191,10 @@
   gap: 18px;
 }
 
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .grid.three {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
@@ -419,7 +423,8 @@
 .filters select,
 .form input,
 .form select,
-.form textarea {
+.form textarea,
+.form-control select {
   width: 100%;
   padding: 10px 12px;
   border-radius: 12px;
@@ -439,6 +444,12 @@
   flex-direction: column;
   gap: 6px;
   color: var(--muted);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .form-grid {
