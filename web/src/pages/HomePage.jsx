@@ -13,7 +13,7 @@ export default function HomePage() {
       <Hero />
 
       <Section
-        eyebrow="Why Korvus"
+        eyebrow="Why Korvus Kennels"
         title="Raised with intention"
         actions={
           <a className="btn ghost sm" href="#contact">
