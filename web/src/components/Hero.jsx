@@ -18,32 +18,32 @@ export default function Hero() {
         <p className="eyebrow">Korvus Kennels</p>
         <h1>{siteConfig.tagline}</h1>
         <p className="muted">
-          Health-tested shepherds with nerve, structure, and biddability.
-          Purpose-built litters, transparent pairing notes, and mentorship for
-          every handler.
+          Premium kennel transparency for buyers who want more than a listing.
+          Inspect litters, documents, stack media, lineage, and breeder notes in
+          one place.
         </p>
         <div className="hero-actions">
           <Link to="/puppies" className="btn primary">
             View Puppies
           </Link>
-          <Link to="/merch" className="btn ghost">
-            Shop Merch
+          <Link to="/program" className="btn ghost">
+            Explore Program
           </Link>
         </div>
-        {/* <div className="hero-tags">
+        <div className="hero-tags">
           <div className="tag-card">
-            <p className="eyebrow">Studs</p>
-            <strong>IPO & sport-tested sires</strong>
+            <p className="eyebrow">Proof library</p>
+            <strong>DNA, health, pedigree, and litter uploads</strong>
           </div>
           <div className="tag-card">
-            <p className="eyebrow">Health</p>
-            <strong>OFA + DNA panels cleared</strong>
+            <p className="eyebrow">Stack off</p>
+            <strong>Side, front, rear, and raw movement compare</strong>
           </div>
           <div className="tag-card">
-            <p className="eyebrow">Support</p>
-            <strong>Handler-first mentorship</strong>
+            <p className="eyebrow">Transparency</p>
+            <strong>Breeder notes clearly separated from uploaded proof</strong>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

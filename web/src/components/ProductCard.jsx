@@ -3,7 +3,7 @@ import siteConfig from "../config/siteConfig";
 
 export default function ProductCard({ product }) {
   const { addItem } = useCart();
-  const image = siteConfig.logoSrc || product.image ;
+  const image = product.image || siteConfig.logoSrc;
 
   return (
     <div className="card">

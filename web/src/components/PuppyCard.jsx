@@ -8,7 +8,7 @@ const statusColor = {
 };
 
 export default function PuppyCard({ puppy }) {
-  const image = siteConfig.logoSrc || puppy.image ;
+  const image = puppy.image || siteConfig.logoSrc;
 
   return (
     <div className="card">

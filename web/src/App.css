@@ -578,6 +578,142 @@
   border: 1px solid var(--stroke);
 }
 
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-row-start {
+  align-items: flex-start;
+}
+
+.card-row-start h3,
+.info-card h3 {
+  margin: 0;
+}
+
+.badge-list,
+.annotation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge-list-compact .pill,
+.annotation-list .pill {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.showcase-pill {
+  border-color: rgba(192, 163, 110, 0.24);
+  background: rgba(192, 163, 110, 0.08);
+  color: #f1d6aa;
+}
+
+.status-pill {
+  text-transform: capitalize;
+}
+
+.showcase-hero-grid,
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.showcase-hero-media img,
+.compare-media img,
+.compare-media video {
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+}
+
+.showcase-card .card-media,
+.document-card .card-media,
+.media-card .card-media {
+  min-height: 220px;
+}
+
+.media-video {
+  width: 100%;
+  min-height: 260px;
+  border-radius: 12px;
+  background: #000;
+}
+
+.info-card,
+.compare-panel {
+  height: 100%;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-list p {
+  margin: 0;
+}
+
+.bullet-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-spacer {
+  height: 18px;
+}
+
+.stackoff-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stackoff-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stackoff-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.tab-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tab-chip {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab-chip-active {
+  color: var(--text);
+  border-color: rgba(192, 163, 110, 0.3);
+  background: rgba(192, 163, 110, 0.08);
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-wrap: wrap;
@@ -594,5 +730,12 @@
   .contact-callout {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .showcase-hero-media img,
+  .compare-media img,
+  .compare-media video,
+  .media-video {
+    min-height: 240px;
   }
 }

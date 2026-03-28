@@ -1,11 +1,22 @@
+import { Link } from "react-router-dom";
+import DogSummaryCard from "../components/DogSummaryCard";
 import Hero from "../components/Hero";
+import LitterCard from "../components/LitterCard";
 import NewsletterForm from "../components/NewsletterForm";
 import PuppyCard from "../components/PuppyCard";
 import Section from "../components/Section";
 import StudCard from "../components/StudCard";
 import TestimonialList from "../components/TestimonialList";
 import siteConfig from "../config/siteConfig";
-import { puppies, studs, testimonials } from "../data/sampleData";
+import {
+  females,
+  kennelProgram,
+  litters,
+  puppies,
+  studs,
+  testimonials,
+  transparencyModules,
+} from "../data/sampleData";
 
 export default function HomePage() {
   return (
@@ -21,34 +32,57 @@ export default function HomePage() {
           </a>
         }
       >
-        {/* <div className="pill-grid">
+        <div className="pill-grid">
           <div className="pill-card">
-            <h3>Health first</h3>
+            <h3>Proof first</h3>
             <p className="muted">
-              OFA hips/elbows, full DNA panels, cardiac + eyes on breeding stock.
+              DNA uploads, pedigree files, and litter paperwork are organized as
+              part of the browsing experience.
             </p>
           </div>
           <div className="pill-card">
-            <h3>Early imprinting</h3>
+            <h3>Raw media</h3>
             <p className="muted">
-              ENS + sound desensitization, problem-solving games, and crate
-              conditioning start at week three.
+              Buyers can inspect side stacks, fronts, heads, movement clips, and
+              unedited footage without leaving the site.
             </p>
           </div>
           <div className="pill-card">
-            <h3>Transparent pairings</h3>
+            <h3>Structured pages</h3>
             <p className="muted">
-              Each litter includes pairing rationale, expected traits, and honest
-              notes on drive + structure.
+              Parents, puppies, and litters are grouped with lineage, breeder
+              notes, and uploaded proof in one premium flow.
             </p>
           </div>
-        </div> */}
+        </div>
       </Section>
 
-      <Section eyebrow="Studs" title="Featured sires">
+      <Section
+        eyebrow="Program"
+        title={kennelProgram.title}
+        actions={
+          <Link className="btn ghost sm" to="/program">
+            Full overview
+          </Link>
+        }
+      >
         <div className="grid three">
-          {studs.slice(0, 2).map((stud) => (
+          {transparencyModules.slice(0, 3).map((module) => (
+            <div key={module.id} className="panel info-card">
+              <p className="eyebrow">{module.title}</p>
+              <p>{module.description}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section eyebrow="Breeding stock" title="Studs and females">
+        <div className="grid two">
+          {studs.slice(0, 1).map((stud) => (
             <StudCard key={stud.id} stud={stud} />
+          ))}
+          {females.slice(0, 1).map((female) => (
+            <DogSummaryCard key={female.id} dog={female} />
           ))}
         </div>
       </Section>
@@ -57,18 +91,34 @@ export default function HomePage() {
         eyebrow="Available"
         title="Puppies ready for placement"
         actions={
-          <a className="btn ghost sm" href="/puppies">
+          <Link className="btn ghost sm" to="/puppies">
             View all puppies
-          </a>
+          </Link>
         }
       >
-        <div className="grid three">
+        <div className="grid two">
           {puppies
             .filter((p) => p.status !== "sold")
             .slice(0, 3)
             .map((puppy) => (
               <PuppyCard key={puppy.id} puppy={puppy} />
             ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="Litter pages"
+        title="Grouped by breeding"
+        actions={
+          <Link className="btn ghost sm" to="/litters">
+            Browse litters
+          </Link>
+        }
+      >
+        <div className="grid two">
+          {litters.slice(0, 1).map((litter) => (
+            <LitterCard key={litter.id} litter={litter} />
+          ))}
         </div>
       </Section>
 
@@ -94,12 +144,12 @@ export default function HomePage() {
             <p className="muted">{siteConfig.location}</p>
           </div>
           <div className="cta-stack">
-            <a className="btn" href="/contact">
+            <Link className="btn" to="/contact">
               Contact form
-            </a>
-            <a className="btn ghost" href="/apply">
+            </Link>
+            <Link className="btn ghost" to="/apply">
               Apply / Waitlist
-            </a>
+            </Link>
           </div>
         </div>
       </Section>

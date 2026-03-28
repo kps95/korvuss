@@ -9,7 +9,7 @@ export default function GalleryPage() {
         <div className="grid four">
           {galleryItems.map((item) => (
             <div key={item.id} className="card photo">
-              <img src={ siteConfig.logoSrc ||item.image } alt={item.caption} />
+              <img src={item.image || siteConfig.logoSrc} alt={item.caption} />
               <p className="muted">{item.caption}</p>
             </div>
           ))}

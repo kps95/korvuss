@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import Section from "../components/Section";
-import siteConfig from "../config/siteConfig";
 import { comboHighlights, lociDetails, strategyRows } from "../data/genetics";
 
 const selectorOptions = {

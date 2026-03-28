@@ -19,6 +19,8 @@ const siteConfig = {
   },
   navLinks: [
     { to: "/", label: "Home" },
+    { to: "/program", label: "Program" },
+    { to: "/litters", label: "Litters" },
     { to: "/studs", label: "Studs" },
     { to: "/puppies", label: "Puppies" },
     { to: "/merch", label: "Merch" },

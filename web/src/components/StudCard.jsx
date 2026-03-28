@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import siteConfig from "../config/siteConfig";
 
 export default function StudCard({ stud }) {
-  const image =  siteConfig.logoSrc ||stud.image ;
+  const image = stud.image || siteConfig.logoSrc;
 
   return (
     <div className="card">
@@ -14,12 +14,12 @@ export default function StudCard({ stud }) {
         <p className="muted">{stud.description}</p>
         <div className="card-meta">
           <span>{stud.color}</span>
-          <span>{stud.dna}</span>
+          <span>{stud.availabilityStatus ?? stud.dna}</span>
         </div>
         <div className="card-row">
           <span className="price">${stud.fee.toLocaleString()}</span>
-          <Link to={`/contact?reason=stud&stud=${stud.name}`} className="btn sm">
-            Request Stud
+          <Link to={`/studs/${stud.id}`} className="btn sm ghost">
+            View profile
           </Link>
         </div>
       </div>
